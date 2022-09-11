@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project group 116</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="checkCookie()">
+    
+<!-- თავსართის სექცია -საწყისი -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> წიგნის თარო </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="რა გაინტერესებს?" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">მთავარი</a>
+            <a href="#featured">წიგნები</a>
+            <a href="#arrivals">სიახლეები</a>
+            <a href="#reviews">მიმოხილვები</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- თავსართის სექცია -დასასრული -->
+
+<!-- icons for responsive navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-feather"></a>
+    <a href="#arrivals" class="fas fa-folder-open"></a>
+    <a href="#reviews" class="fas fa-blog"></a>
+    <a href="#contact" class="fas fa-address-card"></a>
+</nav>
+
+<!-- რეგისტრაციის ფორმა  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>დარეგისტრირდი</h3>
+        <span>მომხმარებლის სახელი</span>
+        <input type="email" name="" class="box" placeholder="ჩაწერე შენი ელ-ფოსტა" id="">
+        <span>სქესი:</span>
+        <input type="radio" class="radio" name="gender" />
+        <label for="">მამრობითი</label>
+        <input type="radio" class="female" name="gender"/>
+        <label for="" >მდედრობითი</label>
+
+      
+
+
+        <span>პაროლი</span>
+        <input type="password" name="" class="box" placeholder="ჩაწერე პაროლი" id="">
+        <input type="password" name="" class="box" placeholder="გაიმეორე პაროლი" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> დამიმახსოვრე</label>
+        </div>
+        <input type="submit" value="დააჭირე აქ" class="btn">
+        <p>დაგავიწყდა? <a href="#">დააჭირე აქ</a></p>
+        <p>არ გაქვს ანგარიში ? <a href="#">დარეგისტრირდი</a></p>
+    </form>
+
+
+</div>
+
+<!-- "მთავარი"-->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3> 75%-მდე ფასდაკლება</h3>
+            <p>გამომცემლობა "ბიბლუსი" სწავლის სეზონის დაწყებასთან დაკავშირებით აცხადებს გრანდიოზულ ფასდაკლებას შერჩეულ კოლექციაზე. გვესტუმრეთ ქსელურ მაღაზიებში ან შეიძინეთ ონ-ლაინ.</p>
+            <a href="#" class="btn">შეიძინე ახლა</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/book-1.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-2.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-3.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-4.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-5.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-6.jpeg" alt=""></a>
+            </div>
+           
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>უფასო მიწოდება</h3>
+            <p>თუ შენაძენი 80 ლარზე მეტია</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>უსაფრთხო გადახდა</h3>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>მოქნილი დაბრუნება</h3>
+            <p>თანხა ანაზღაურდება 7 დღეში</p>
+        </div>
+    </div>
+
+    
+
+</section>
+
+
+
+<!-- "შერჩეული წიგნები" -->
+
+
+
+<section class="featured" id="featured">
+
+    <h2 class="heading"> <span>შერჩეული წიგნები</span> </h2>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">14.99 ლარი <span>21.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book5.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">9.80 ლარი <span>16.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">15.00 ლარი <span>25.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-8.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price"> 16.00 ლარი <span> 30.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">16.00 ლარი <span>25.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-10.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">10.00 ლარი <span>20.99 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათას</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">16,00 ლარი <span>21,00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათში</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">10,00 ლარი <span>16,00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათში</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">10.00 ლარი <span>20.00 ლარი</span></div>
+                    <a href="#" class="btn">დაამატე კალათში</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-4.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>შერჩეული წიგნი</h3>
+                    <div class="price">9.99 ლარი <span>18.00 ლარი</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- "სიახლეები" -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>დარეგისტრირდი სიახლეების მისაღებად</h3>
+        <input type="email" name="" placeholder="ჩაწერე შენი ელ-ფოსტა" id="" class="box">
+        <input type="submit" value="დაადასტურე" class="btn">
+    </form>
+
+</section>
+
+
+
+
+
+<section class="arrivals" id="arrivals">
+
+    <h2 class="heading"> <span>ახალი წიგნები</span> </h2>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>ახალი წიგნი</h3>
+                    <div class="price">16.00 <span>25.00</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-10.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ახალი წიგნი</h3>
+                    <div class="price">10.00 <span>20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ახალი წიგნი</h3>
+                    <div class="price">16.00 <span>21.00</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ახალი წიგნი</h3>
+                    <div class="price">10.00 <span>20.00</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ახალი წიგნი</h3>
+                    <div class="price">9.99 <span>18.00</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+                     
+
+        </div>
+
+    </div>
+
+    
+
+   
+
+</section>
+
+
+
+<section class="deal">
+
+    <div class="content">
+        <h3>დღის შეთავაზება</h3>
+        <h1>ფასდაკლება 50%-მდე</h1>
+        
+        <a href="#" class="btn">შეიძინე დღეს</a>
+    </div>
+
+    <div class="image">
+        <img src="image/deal-img.jpeg" alt="">
+    </div>
+
+</section>
+
+
+
+<!-- მიმოხილვები  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>მიმოხილვები</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/pic-1.jpeg" alt="">
+                <h3>ზურაბ ლეჟავა</h3>
+            </button>
+            <div class="panel">
+                <p>ნატურალისტური ფანტასმაგორია,  ასე შეიძლება დახასიათდეს ზურაბ ლეჟავას პროზა.” ბავშვის ნაკბენი კარალიოკზე ოქტომბრის თვეში...” ზურაბ ლეჟავას ყველაზე სრული კრებულია და სხვადასხვა დროს გამოქვეყნებულ მოთხობებსა და ერთ მცირე რომანს აერთიანებს./p>
+                </div>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            
+            </div>
+
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/pic-2.jpg" alt="">
+                <h3>ენტონი ბერჯესი</h3>
+            </button>
+            <div class="panel">
+                <p>დავიწყოთ იმით, რომ “მექანიკური ფორთოხალი” შეუდარებელი რომანია. ახალგაზრდა ალექსის სახით ენტონი ბერჯესმა ისეთი გამორჩეული და ორიგინალური ბოროტმოქმედის პორტრეტი დაგვიხატა, რომ იგი გრემ გრინის ცნობილ პერსონაჟს, ფინქისაც არ უდებს ტოლს, ის კი არადა, აჭარბებს კიდეც ცინიკური სისასტიკითა და გულქვაობით. ალექსი არის ზნედაცემული, აულაგმავი თინეიჯერი, ერთი სიტყვით, გამოცხადებული პატარა ურჩხულია, რომელიც “უანგაროდ” უძღვნის თავს ბოროტებას და ფანტასტიკურ “საგმირო საქმეებსაც” ჯოჯოხეთური ცეცხლით აღაგზნებს. ის მიზანსწრაფი, თავდადებული ბოროტმოქმედია, თუმცა ძნელია მის საქციელში ლოგიკურობის მსგავსი რაიმის აღმოჩენა; იგი, უბრალოდ, ზვიგენივით უტრიალებს გარს თავის ლუკმას და ინტელექტთან შეზავებულ დაუნდობლობას აფრქვევს.</p>
+            </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/pic-3.jpg" alt="">
+                <h3>ენიდ ბლაიტონი</h3>
+                </button>
+                <div class="panel">
+                <p>ენიდ ბლაიტონი მსოფლიოში ერთ-ერთი ყველაზე პოპულარული საბავშვო მწერალია, რომელმაც სათავგადასავლო სერიებით გაითქვა სახელი. „მელორი ტაუერსი“ ექვს ნაწილიანი სერიაა გოგონების სკოლა პანსიონის შესახებ. სერიის პირველი წიგნი დიდ ბრიტანეთში 1946 წელს გამოიცა. მოქმედება იმ პანსიონში ხდება, რომელშიც თავად მწერლის ქალიშვილი სწავლობდა. მთავარი პერსონაჟის, დარელ რივერსის ინსპირაციაც ენიდ ბლაიტონის შვილი იყო. დარელ რივერსი მელორი ტაუერსში სწავლობს, ეს სასახლის ტიპის კოშკურებიანი სასწავლებელია, რომელიც ინგლისის სამხრეთით, კორნუოლში მდებარეობს. სემესტრის დასაწყისში გოგონები იქ მატარებლით ჩადიან და არდადეგების დაწყებამდე რჩებიან. აქ ეჩვევიან დამოუკიდებელ ცხოვრებას, იძენენ მეგობრებს, სწავლობენ და ერთობიან. მათი თავგადასავლები საუკეთესო თავშესაქცევია 8-12 წლის მკითხველებისთვის.</p>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/pic-4.jpg" alt="">
+                <h3>უმბერტო ეკო</h3>
+                </button>
+                <div class="panel">
+                <p>„ვარდის სახელი“ ცნობილი იტალიელი მწერლის, სემიოლოგისა და შუა საუკუნეების მკვლევრის - უმბერტო ეკოს პირველი რომანია. წიგნი 1980 წელს გამოქვეყნდა და პოსტმოდერნისტული ლიტერატურის კლასიკად ითვლება. ეს არის ტექსტი, რომელიც ისტორიული რომანივით მასშტაბური, გოთიკური რომანივით პირქუში და დეტექტივივით მძაფრია.</p>
+            </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/pic-5.jpg" alt="">
+                <h3>პერი სმიტი</h3>
+                </button>
+                <div class="panel">
+                <p>"ეს არ არის წიგნი"-ეს საგანი შენ გარეშე ვერ იარსებებს. შენ შექმნი მის შინაარსსა და დიზაინს. ყველაფერი შენი წარმოსახვისა და ფანტაზიის შედეგი იქნება, ოღონდ იცოდე: დავალების შესასრულებლად ამ საგნის გასაცოცხლებლად სახლიდან გასვლა და ერთი-ორი ნაბიჯის გადადგმა მოგიწევს.</p>
+            </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <button class="accordion">
+                <img src="image/download.png" alt="">
+                <h3>ბაკურ სულაკაურის გამომცემლობა</h3>
+            </button>
+            <div class="panel">
+                <p>„რჩეული მოთხრობები“ მეოცე საუკუნის მეორე ნახევრიდან დღემდე შექმნილ საუკეთესო პროზაულ კრებულთა სერიაა. აქ იხილავთ ქართველი მწერლების მიერ სხვადასხვა დროს დაწერილ მოთხრობებს, რომლებმაც გამოქვეყნებისთანავე მიიპყრო საზოგადოების ყურადღება.
+
+                    ამ სერიაში თავმოყრილია სხვადასხვა კრებულიდან თუ პერიოდიკიდან ამოკრებილი.გამორჩეული ნაწარმოებები.  ჩვენი ერთ-ერთი მთავარი პრიორიტეტი თანამედროვე.ქართული ლიტერატურის განვითარებაა, სწორედ ამიტომ, სერიის მიზანი თანამედროვე ქართველი ავტორების პოპულარიზაცია და.მათი ნაწარმოებების მკითხველთა ფართო წრისათვის გაცნობაა.
+                    
+                    ზემოთ აღნიშნული სერია გააერთიანებს როგორც ცნობილ, ისე მკითხველთა ფართო წრისათვის აქამდე უცნობ ავტორთა იმ ნაწარმოებებს, რომლებიც წლების განმავლობაში მხოლოდ პერიოდულ გამოცემებსა და მცირეტრაჟიან კრებულებში იბეჭდებოდა. სერიაში უკვე გამოიცა არჩილ ქიქოძის, ზაირა არსენიშვილის, ბესო ხვედელიძისა და ზურაბ ლეჟავას მოთხრობები.
+                    
+                    </p>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+<!-- "კონტაქტი"  -->
+
+<section class="contact" id="contact">
+
+    <h2 class="heading"> <span>გვიპოვნით აქ</span> </h2>
+
+    <div class="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5905.308675558598!2d42.7018377184868!3d42.26455370918459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8ce2962d30af%3A0xc2d866e6effb56b8!2sAkaki%20Tsereteli%20State%20University!5e0!3m2!1sen!2sge!4v1657447520013!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
+</section>
+
+
+<!-- "footer"  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>ჩვენი კოორდინანტები</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> იმერეთი </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> ქართლი </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> კახეთი </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> აჭარა </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> გურია </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> სამეგრელო </a>
+        </div>
+
+        <div class="box">
+            <h3>ლინკები</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> მთავარი </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> წიგნები </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> სიახლეები </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> მიმოხილვები </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> კონტაქტი</a>
+        </div>
+
+        <div class="box">
+            <h3>დამატებითი</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>პირადი ბარათი </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> შეკვეთილი პროდუქცია </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> საკუთრების პოლიტიკა </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> გადახდის მეთოდი</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>ჩვენი მომსახურება </a>
+        </div>
+
+        <div class="box">
+            <h3>საკონტაქტო ინფორმაცია</h3>
+            
+            <div class="box">
+                
+                <a href="#"> <i class="fas fa-phone"></i> +599-111 111 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> books@gmail.com </a>
+                
+        
+                  
+        
+            </div>
+       
+        
+    </div>
+
+    
+
+</section>
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
